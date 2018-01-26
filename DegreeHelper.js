@@ -1,7 +1,6 @@
 export default class DegreeHelper {
     static toDegree(floatNumber) {
         const num = Math.floor(floatNumber);
-        console.log("round: ", num);
         const odd = floatNumber - num;
         const minute = Math.floor(odd * 60);
         return num + '\xB0' + minute;
