@@ -26,7 +26,7 @@ export default class Inputs extends React.Component {
                     placeholder="Ngày"
                     onChangeText={text => this.handleDay(text)}
                     value={day.toString()}
-                    maxLength={10} //setting limit of input
+                    maxLength={10}
                 />
                 <Text>Tháng</Text>
                 <TextInput
@@ -35,7 +35,7 @@ export default class Inputs extends React.Component {
                     placeholder="Tháng"
                     onChangeText={text => this.handleMonth(text)}
                     value={month.toString()}
-                    maxLength={10} //setting limit of input
+                    maxLength={10}
                 />
                 <Text>Năm</Text>
                 <TextInput
