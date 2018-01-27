@@ -21,6 +21,6 @@ export default (styles = StyleSheet.create({
         margin: 10,
         padding: 10,
         color: 'orange',
-        fontSize: 25,
+        fontSize: 20,
     },
 }));
