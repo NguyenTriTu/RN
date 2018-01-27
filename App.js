@@ -22,7 +22,7 @@ export default class Inputs extends React.Component {
     }
 
     render() {
-        const {day, month, year, result} = this.state;
+        const { day, month, year, result } = this.state;
         return (
             <View style={styles.container}>
                 <View style={styles.inputWrapper}>
@@ -54,27 +54,26 @@ export default class Inputs extends React.Component {
                         maxLength={10}
                     />
                 </View>
-                <Text style={styles.result}> {result} </Text>
+                <Text style={styles.result}> Vị trí tử khí: {result} </Text>
             </View>
         );
     }
 
     handleDay(day) {
-        const {year, month} = this.state;
+        const { year, month } = this.state;
         const result = PurpleAirCalculator.calculate(day, month, year);
-        this.setState({day: day, result: result});
+        this.setState({ day: day, result: result });
     }
 
     handleMonth(month) {
-        const {day, year} = this.state;
+        const { day, year } = this.state;
         const result = PurpleAirCalculator.calculate(day, month, year);
-        this.setState({month: month, result: result});
+        this.setState({ month: month, result: result });
     }
 
     handleYear(year) {
-        const {day, month} = this.state;
+        const { day, month } = this.state;
         const result = PurpleAirCalculator.calculate(day, month, year);
-        this.setState({year: year, result: result});
+        this.setState({ year: year, result: result });
     }
-
 }
