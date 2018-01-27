@@ -1,28 +1,26 @@
 import { StyleSheet } from 'react-native';
 
-export default styles = StyleSheet.create({
+export default (styles = StyleSheet.create({
     container: {
         paddingTop: 23,
     },
+    inputWrapper: {
+        paddingLeft:10,
+        paddingRight:10,
+        alignItems:'center',
+        flexDirection: 'row',
+    },
     input: {
-        margin: 15,
-        height: 40,
+        flex:1,
+        padding:10,
+        margin: 10,
         borderColor: '#7a42f4',
         borderWidth: 1,
-    },
-    submitButton: {
-        backgroundColor: '#7a42f4',
-        padding: 10,
-        margin: 15,
-        height: 40,
-    },
-    submitButtonText: {
-        color: 'white',
     },
     result: {
         margin: 10,
         padding: 10,
-        color: 'red',
-        fontSize: 15,
+        color: 'orange',
+        fontSize: 25,
     },
-});
+}));

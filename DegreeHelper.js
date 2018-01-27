@@ -2,7 +2,7 @@ export default class DegreeHelper {
     static toDegree(floatNumber) {
         const num = Math.floor(floatNumber);
         const odd = floatNumber - num;
-        const minute = Math.floor(odd * 60);
+        const minute = Math.round(odd * 60);
         return num + '\xB0' + ' ' + minute +"'";
     }
 
