@@ -3,6 +3,7 @@ import { View, Text, TextInput } from 'react-native';
 import { ANCHOR_DAY, ANCHOR_MONTH, ANCHOR_YEAR } from './PurpleAirCalculator';
 import PurpleAirCalculator from './PurpleAirCalculator';
 import styles from './styles';
+import AdBanner from './AdBanner';
 
 const ANCHOR_RESULT = PurpleAirCalculator.calculate(
     ANCHOR_DAY,
@@ -55,6 +56,7 @@ export default class Inputs extends React.Component {
                     />
                 </View>
                 <Text style={styles.result}> Vị trí tử khí: {result} </Text>
+                <AdBanner />
             </View>
         );
     }
