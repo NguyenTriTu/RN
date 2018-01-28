@@ -2,7 +2,8 @@ import { StyleSheet } from 'react-native';
 
 export default (styles = StyleSheet.create({
     container: {
-        paddingTop: 23,
+        flex:1,
+        paddingTop:100
     },
     inputWrapper: {
         paddingLeft:10,
