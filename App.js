@@ -1,9 +1,10 @@
 import React from 'react';
-import { View, Text, TextInput } from 'react-native';
+import { View, Text, TextInput, Image } from 'react-native';
 import { ANCHOR_DAY, ANCHOR_MONTH, ANCHOR_YEAR } from './PurpleAirCalculator';
 import PurpleAirCalculator from './PurpleAirCalculator';
 import styles from './styles';
 import AdBanner from './AdBanner';
+import { Logo } from './icon.png';
 
 const ANCHOR_RESULT = PurpleAirCalculator.calculate(
     ANCHOR_DAY,
